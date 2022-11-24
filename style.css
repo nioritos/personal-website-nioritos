@@ -1,0 +1,95 @@
+body, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+title {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nioritos {
+    clip-path: circle();
+    width: 12.5rem;
+
+}
+
+.name {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333333;
+
+}
+
+.name strong:hover {
+    transition: 0.5s;
+    color: #107fd2;
+    cursor: pointer;
+}
+
+
+.description-profile {
+    font-size: 1.3rem;
+    color: #333333;
+
+}
+
+.hyperlinks-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+    
+
+}
+
+.hyperlinks-area div {
+    max-width: 22.5rem;
+
+}
+
+
+.hyperlinks-area div a {
+    padding: 2rem;
+    border: 1px solid rgb(156, 156, 156);
+    border-radius: 0.50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-center;
+    align-items: flex-start;
+    color: #333333;
+}
+
+.hyperlinks-area div a:hover {
+    transition: 0.5s;
+    color: #107fd2 ;
+    border-color: #107fd2;
+}
+
+.hyperlinks-area div a h2 {
+    text-align: left;
+}
+
+@media (max-width: 762px) {
+    .hyperlinks-area {
+        grid-template-columns: 1fr;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .description-profile {
+        font-size: 1rem;
+    }
+}
